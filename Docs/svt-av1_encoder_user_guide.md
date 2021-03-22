@@ -290,7 +290,10 @@ for this command line, corresponding qindex are:
 | **SquareWeight** | --sqw | 0 for off and any whole number percentage | 100 | Weighting applied to square/h/v shape costs when deciding if a and b shapes could be skipped. Set to 100 for neutral weighting, lesser than 100 for faster encode and BD-Rate loss, and greater than 100 for slower encode and BD-Rate gain|
 | **ChannelNumber** | --nch | [1 - 6] | 1 | Number of encode instances |
 | **StatReport** | --enable-stat-report | [0-1] | 0 | When set to 1, calculates and outputs average PSNR values |
-
+| **ColorPrimaries** | --color-primaries | [0-12, 22] | 2 | Set color primaries, please see the subsection 6.4.2 of the <a href="https://aomediacodec.github.io/av1-spec/av1-spec.pdf" target="_blank">AV1 Bitstream &amp; Decoding Process Specification</a> for details |
+| **TransferCharacteristics** | --transfer-characteristics | [0-22] | 2 | Set transfer characteristics, please see the subsection 6.4.2 of the <a href="https://aomediacodec.github.io/av1-spec/av1-spec.pdf" target="_blank">AV1 Bitstream &amp; Decoding Process Specification</a> for details |
+| **MatrixCoefficients** | --matrix-coefficients | [0-14] | 2 | Set matrix coefficients, please see the subsection 6.4.2 of the <a href="https://aomediacodec.github.io/av1-spec/av1-spec.pdf" target="_blank">AV1 Bitstream &amp; Decoding Process Specification</a> for details |
+| **ColorRange** | --color-range | [0-1] | 0 | Set color range, please see the subsection 6.4.2 of the <a href="https://aomediacodec.github.io/av1-spec/av1-spec.pdf" target="_blank">AV1 Bitstream &amp; Decoding Process Specification</a> for details |
 
 the DEFAULT option would allow the encoder to choose adaptively any of the values in the range for that option whether on a preset, picture, or SB level.
 
